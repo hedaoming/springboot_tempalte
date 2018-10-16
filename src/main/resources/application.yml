@@ -7,3 +7,5 @@ spring:
       pool:
         max-wait: 300ms
         max-active: 1000
+
+logging
