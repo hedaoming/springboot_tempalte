@@ -1,8 +1,8 @@
 package template.demo.pet.service;
 
-import template.demo.pet.model.Pet;
+import template.demo.pet.model.Pets;
 
 public interface IPetService {
 
-    Pet findByPetId(Integer petId);
+    Pets findByPetId(Integer petId);
 }

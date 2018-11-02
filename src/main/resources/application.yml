@@ -7,5 +7,20 @@ spring:
       pool:
         max-wait: 300ms
         max-active: 1000
+  datasource:
+    url: jdbc:mysql://localhost:3306/pet?useUnicode=true
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    #数据表的创建方式,none则不使用
+    hibernate:
+      ddl-auto: none
+    #显示操作的sql语句
+    show-sql: true
 
-logging
+
+server:
+  port: 8989
