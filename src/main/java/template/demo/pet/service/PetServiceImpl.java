@@ -15,4 +15,14 @@ public class PetServiceImpl implements IPetService {
     public Pets findByPetId(Integer petId) {
         return petRepository.findPetById(petId);
     }
+
+    @Override
+    public void savePet(Pets pet) {
+        petRepository.save(pet);
+    }
+
+    @Override
+    public void deletePet(Integer petId) {
+        petRepository.deleteById(petId);
+    }
 }

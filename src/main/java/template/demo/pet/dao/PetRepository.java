@@ -9,4 +9,5 @@ import template.demo.pet.model.Pets;
 public interface PetRepository extends JpaRepository<Pets, Integer> {
 
     Pets findPetById(Integer petId);
+
 }
