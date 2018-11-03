@@ -21,6 +21,7 @@ public class CalendarTest {
         System.out.println(yesterday);
         Assert.assertEquals("获取昨日失败", yesterday, "2018-10-31");
 
+        // 清除时间，重置到1970-01-01
         instance.clear();
         instance.set(2018,9,30);
         instance.add(Calendar.DATE, -1);
